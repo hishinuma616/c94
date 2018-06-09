@@ -62,9 +62,19 @@
     </footer>
 
     <script>
-      $(function(){
-        $('#js-sideNav').load('nav.html');
-        $('#js-front').addClass('side-nav-active');
+      function asyncFunction() {
+        return new Promise(function (resolve, reject) {
+          $('#js-sideNav').load('nav.html', null, function() {
+            $('#js-front').addClass('side-nav-active');
+          });
+          resolve();
+        });
+      }
+
+      asyncFunction().then(function () {
+        console.log('サイドバー読めた！');
+      }).catch(function (error) {
+        console.log('サイドバーが読み込めていません');
       });
     </script>
   </body>
