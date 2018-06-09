@@ -1,0 +1,30 @@
+.rankingIcon {
+  position: absolute;
+  top: -13px;
+  left: 0;
+  width: 30px;
+  height: 40px;
+
+  .rankingIcon-text {
+    position: absolute;
+    top: 6px;
+    left: 11px;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+}
+
+.rankingIcon-first {
+  background-image: url('../../../img/ranking-gold.png');
+  background-size: contain;
+}
+
+.rankingIcon-second {
+  background-image: url('../../../img/ranking-silver.png');
+  background-size: contain;
+}
+
+.rankingIcon-third {
+  background-image: url('../../../img/ranking-bronze.png');
+  background-size: contain;
+}

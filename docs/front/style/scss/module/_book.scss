@@ -1,0 +1,91 @@
+.book {
+  line-height: 1.2;
+  font-size: 1.4rem;
+
+  .book-thumbnail-container {
+    padding-right: 20px;
+    width: 38%;
+
+    &.book-thumbnail-container-feed {
+      padding: 0 30px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    &.book-thumbnail-container-ranking {
+      position: relative;
+      padding-left: 12px;
+      width: 45%;
+    }
+  }
+
+  .book-body {
+    width: 62%;
+
+    &.book-body-ranking {
+      width: 55%;
+    }
+  }
+
+  .book-title {
+    color: #333;
+    font-size: 2rem;
+    font-weight: 500;
+
+    &.book-title-ranking {
+      font-size: 1.5rem;
+    }
+  }
+
+  .book-writer {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: #50608b;
+    padding: 0 8px;
+    background-color: #eef2fb;
+    line-height: 1.4;
+
+    &.book-writer-ranking {
+      font-size: 1.3rem;
+      color: #6e97b1;
+      line-height: 1.4;
+      padding: 0;
+      background-color: #fff;
+    }
+  }
+
+  .book-info {
+
+    dt,
+    dd {
+      font-size: 15px;
+      line-height: 2.2;
+    }
+  }
+
+  .book-label {
+    display: inline-block;
+    width: 40px;
+    padding: 5px 4px;
+    font-size: 1rem;
+    border: solid 1px transparent;
+
+    &.book-label-language {
+      border-color: #3c6ea6;
+      color: #3c6ea6;
+      background-color: #fff;
+    }
+
+    &.book-label-free {
+      border-color: #1ea0c5;
+      color: #fff;
+      background-color: #1ea0c5;
+    }
+
+    &.book-label-unread {
+      border-color: #bfbebe;
+      color: #fff;
+      background-color: #bfbebe;
+    }
+  }
+}

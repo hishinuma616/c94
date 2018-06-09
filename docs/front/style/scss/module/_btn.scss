@@ -1,0 +1,68 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+  border-bottom: solid 2px transparent;
+  border-radius: 4px;
+
+  &.btn-login {
+    width: 90px;
+    height: 40px;
+    padding: 0 6px;
+    line-height: 38px;
+    font-size: 1.3rem;
+    background-color: #1ea0c5;
+    border-color: #137692;
+
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: bold;
+      content: '\f2f6';
+      margin-right: 4px;
+      vertical-align: middle;
+      font-size: 16px;
+      color: #fff;
+    }
+  }
+
+  &.btn-entry {
+    width: 90px;
+    height: 40px;
+    padding: 0 6px;
+    line-height: 38px;
+    font-size: 1.3rem;
+    background-color: #ef534b;
+    border-color: #a0403b;
+
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: bold;
+      content: '\f007';
+      margin-right: 4px;
+      vertical-align: middle;
+      font-size: 16px;
+      color: #fff;
+    }
+  }
+
+  &.btn-arrow {
+    position: relative;
+    background-color: #293c6f;
+    border-color: #0d1733;
+    padding: 17px 31px;
+    font-size: 1.4rem;
+
+    &::after {
+      position: absolute;
+      right: 10px;
+      font-family: "Font Awesome 5 Free";
+      font-weight: bold;
+      content: '\f105';
+      margin-left: 2px;
+      vertical-align: middle;
+      font-size: 1.5rem;
+      color: #fff;
+    }
+  }
+}

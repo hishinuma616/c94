@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../../font/NotoSansCJKjp-Thin.woff')format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../../font/NotoSansCJKjp-Light.woff')format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../../font/NotoSansCJKjp-Medium.woff')format("woff");
+}
+
+
+html {
+  font-size: 62.5%;
+}
+
+
+body {
+  font-family: 'Noto Sans Japanese', sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.8;
+  font-weight: 200;
+  color: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #2dacdb;
+}
+
+i {
+  color: #d0d0d0;
+  font-size: 2rem;
+}
+
+.is-hide {
+  display: none;
+}
+
+.is-active {
+  display: block;
+}
+
+.is-nowrap {
+  white-space: nowrap;
+}
+
+.contents {
+  max-width: 600px;
+  margin: 0 auto;
+}

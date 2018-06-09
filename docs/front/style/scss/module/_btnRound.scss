@@ -1,0 +1,19 @@
+.btnRound {
+  display: inline-block;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1;
+  background-color: #f3f6fa;
+  color: #293c6f;
+  border: 1px solid #d9e2ed;
+  border-radius: 52px;
+
+  &.btnRound-outside {
+    padding: 7px 10px;
+  }
+
+  &.btnRound-readMore {
+    font-size: 1.4rem;
+    padding: 12px 30px;
+  }
+}
