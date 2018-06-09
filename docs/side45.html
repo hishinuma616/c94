@@ -74,24 +74,17 @@
     </footer>
 
     <script>
-      $(function(){
-        $('#js-sideNav').load('nav.html');
-        $('#js-side45').addClass('side-nav-active');
-      });
-
       function asyncFunction() {
-
-          return new Promise(function (resolve, reject) {
-              setTimeout(function () {
-                  resolve('Async Hello world');
-              }, 3);
-          });
+        return new Promise(function (resolve, reject) {
+          ('#js-sideNav').load('nav.html');
+          resolve();
+        });
       }
 
-      asyncFunction().then(function (value) {
-          console.log(value);    // => 'Async Hello world'
+      asyncFunction().then(function () {
+        $('#js-side45').addClass('side-nav-active');
       }).catch(function (error) {
-          console.error(error);
+        console.log('サイドバーが読み込めていません。')
       });
     </script>
   </body>
