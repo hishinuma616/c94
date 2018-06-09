@@ -56,8 +56,8 @@
     <script>
       function asyncFunction() {
         return new Promise(function (resolve, reject) {
-          $('#js-side').load('nav.html', null, function() {
-            $('#js-side45').addClass('side-nav-active');
+          $('#js-sideNav').load('nav.html', null, function() {
+            $('#js-side').addClass('side-nav-active');
           });
           resolve();
         });
