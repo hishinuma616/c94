@@ -1,6 +1,7 @@
 .l-label-container {
+  display: flex;
 
   & > * {
-    margin-right: 4px;
+    margin-right: 10px;
   }
 }

@@ -39,7 +39,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #2dacdb;
+  color: #3129e9;
 }
 
 i {
@@ -60,6 +60,39 @@ i {
 }
 
 .contents {
-  max-width: 600px;
+  width: 960px;
   margin: 0 auto;
+  display: flex;
+}
+
+.left-contents {
+  flex-grow: 0;
+  width: 160px;
+  margin-right: 30px;
+}
+
+.right-contents {
+  flex-grow: 1
+}
+
+.side-container {
+  padding: 0 2px;
+}
+
+.side-nav {
+
+  li {
+    position: relative;
+    padding-left: 14px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: calc(50% - 6px);
+      border-top: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+      border-left: 8px solid #f7ac00;
+    }
+  }
 }

@@ -1,63 +1,50 @@
 .book {
   line-height: 1.2;
   font-size: 1.4rem;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: solid 1px #bbb;
+
+  &:last-child {
+    border-bottom: none;
+  }
 
   .book-thumbnail-container {
-    padding-right: 20px;
-    width: 38%;
+    margin-right: 20px;
 
-    &.book-thumbnail-container-feed {
-      padding: 0 30px;
-      margin: 0 auto;
-      width: 100%;
-    }
-
-    &.book-thumbnail-container-ranking {
-      position: relative;
-      padding-left: 12px;
-      width: 45%;
-    }
-  }
-
-  .book-body {
-    width: 62%;
-
-    &.book-body-ranking {
-      width: 55%;
-    }
-  }
-
-  .book-title {
-    color: #333;
-    font-size: 2rem;
-    font-weight: 500;
-
-    &.book-title-ranking {
-      font-size: 1.5rem;
-    }
-  }
-
-  .book-writer {
-    display: inline-block;
-    font-size: 1.4rem;
-    color: #50608b;
-    padding: 0 8px;
-    background-color: #eef2fb;
-    line-height: 1.4;
-
-    &.book-writer-ranking {
-      font-size: 1.3rem;
-      color: #6e97b1;
-      line-height: 1.4;
-      padding: 0;
-      background-color: #fff;
+    .book-thumbnai {
+      width: 200px;
     }
   }
 
   .book-info {
+    border: solid 1px #bbb;
+    width: 460px;
+
+    .book-info-row {
+      display: flex;
+      border-bottom: solid 1px #bbb;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    dt {
+      background-color: #d4d4d4;
+      width: 30%;
+      flex-grow: 0;
+      font-weight: 500;
+    }
+
+    dd {
+      width: 70%;
+    }
 
     dt,
     dd {
+      padding: 5px 10px;
+      color: #555;
       font-size: 15px;
       line-height: 2.2;
     }
@@ -65,27 +52,33 @@
 
   .book-label {
     display: inline-block;
-    width: 40px;
     padding: 5px 4px;
-    font-size: 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
     border: solid 1px transparent;
 
-    &.book-label-language {
-      border-color: #3c6ea6;
-      color: #3c6ea6;
-      background-color: #fff;
+    &.book-label-new {
+      border-color: #f7ac00;
+      color: #fff;
+      background-color: #f7ac00;
     }
 
-    &.book-label-free {
+    &.book-label-old {
+      border-color: #d4d4d4;
+      color: #555;
+      background-color: #d4d4d4;
+    }
+
+    &.book-label-genre {
       border-color: #1ea0c5;
       color: #fff;
       background-color: #1ea0c5;
     }
 
-    &.book-label-unread {
-      border-color: #bfbebe;
-      color: #fff;
-      background-color: #bfbebe;
+    &.book-label-char {
+      border-color: #def39f;
+      color: #3f9d25;
+      background-color: #def39f;
     }
   }
 }
