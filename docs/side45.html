@@ -77,13 +77,13 @@
       function asyncFunction() {
         return new Promise(function (resolve, reject) {
           $('#js-sideNav').load('nav.html');
-          console.log('サイドバー読めた！');
           resolve();
         });
       }
 
       asyncFunction().then(function () {
         $('#js-side45').addClass('side-nav-active');
+        console.log('サイドバー読めた！');
       }).catch(function (error) {
         console.log('サイドバーが読み込めていません');
       });
