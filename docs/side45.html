@@ -26,62 +26,43 @@
     </header>
 
     <div class='contents'>
-      <div class='left-contents'>
-      <h2 class='heading-subtitle l-bottom-xxsmall'>作画資料</h2>
-        <div class='side-container l-bottom-small'>
-          <ul class='side-nav'>
-            <li><a href='front.html'>正面顔</a></li>
-            <li class='side-nav-active'><a href='side45.html'>斜め顔</a></li>
-            <li><a href='side.html'>横顔</a></li>
-          </ul>
-        </div>
-        <h2 class='heading-subtitle l-bottom-xxsmall'>キャラ設定画</h2>
-        <div class='side-container'>
-          <ul class='side-nav'>
-            <li><a href=''>パチュリー</a></li>
-            <li><a href=''>小悪魔</a></li>
-            <li><a href=''>レミリア</a></li>
-            <li><a href=''>フラン</a></li>
-            <li><a href=''>美鈴</a></li>
-            <li><a href=''>咲夜</a></li>
-          </ul>
-        </div>
-        </div>
-        <div class='right-contents'>
-          <article>
-            <section>
-              <h2 class='heading-subtitle l-bottom-midium'>斜め参考資料</h2>
-              <div class='l-bottom-xlarge'>
-                <div class='container full'>
-                  <div class='img-container'><img src='img/side45-1.jpg'></div>
-                </div>
-                <div class='container half'>
-                  <div class='img-container'><img src='img/side45-2.jpg'></div>
-                  <div class='img-container'><img src='img/side45-3.jpg'></div>
-                </div>
-                <div class='container half'>
-                  <div class='img-container'><img src='img/side45-4.jpg'></div>
-                  <div class='img-container'><img src='img/side45-5.jpg'></div>
-                </div>
-                <div class='container full'>
-                  <div class='img-container'><img src='img/side45-6.jpg'></div>
-                </div>
-                <div class='container full'>
-                  <div class='img-container'><img src='img/side75-5.jpg'></div>
-                </div>
-                <div class='container half'>
-                  <div class='img-container'><img src='img/side75-1.jpg'></div>
-                  <div class='img-container'><img src='img/side75-2.jpg'></div>
-                </div>
-                <div class='container half'>
-                  <div class='img-container'><img src='img/side75-3.jpg'></div>
-                  <div class='img-container'><img src='img/side75-4.jpg'></div>
-                </div>
-              </div>
-            </section>
-          </article>
-        </div>
+      <div class='left-contents' id='js-sideNav'>
       </div>
+      <div class='right-contents'>
+      <article>
+        <section>
+          <h2 class='heading-subtitle l-bottom-midium'>斜め参考資料</h2>
+          <div class='l-bottom-xlarge'>
+            <div class='container full'>
+              <div class='img-container'><img src='img/side45-1.jpg'></div>
+            </div>
+            <div class='container half'>
+              <div class='img-container'><img src='img/side45-2.jpg'></div>
+              <div class='img-container'><img src='img/side45-3.jpg'></div>
+            </div>
+            <div class='container half'>
+              <div class='img-container'><img src='img/side45-4.jpg'></div>
+              <div class='img-container'><img src='img/side45-5.jpg'></div>
+            </div>
+            <div class='container full'>
+              <div class='img-container'><img src='img/side45-6.jpg'></div>
+            </div>
+            <div class='container full'>
+              <div class='img-container'><img src='img/side75-5.jpg'></div>
+            </div>
+            <div class='container half'>
+              <div class='img-container'><img src='img/side75-1.jpg'></div>
+              <div class='img-container'><img src='img/side75-2.jpg'></div>
+            </div>
+            <div class='container half'>
+              <div class='img-container'><img src='img/side75-3.jpg'></div>
+              <div class='img-container'><img src='img/side75-4.jpg'></div>
+            </div>
+          </div>
+          </section>
+        </article>
+      </div>
+    </div>
 
     <footer>
       <div class='footer-container'>
@@ -90,5 +71,11 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      $(function(){
+        $('#js-sideNav').load('nav.html');
+      });
+    </script>
   </body>
 </html>
