@@ -74,27 +74,22 @@
     </footer>
 
     <script>
-    $('#js-sideNav').load('nav.html', null, function() {
-      $('#js-sideNav').addClass('side-nav-active');
-    });
 
-      // function asyncFunction() {
-      //   return new Promise(function (resolve, reject) {
-      //     $('#js-sideNav').load('nav.html');
-      //     if(status !== 'success')return;
-      //     $('li').addClass('side-nav-active');
-      //     });
-      //     resolve();
-      //   });
-      // }
-      //
-      // asyncFunction().then(function () {
-      //
-      //   $('img').addClass('thumbnail-shadow');
-      //   console.log('サイドバー読めた！');
-      // }).catch(function (error) {
-      //   console.log('サイドバーが読み込めていません');
-      // });
+
+      function asyncFunction() {
+        return new Promise(function (resolve, reject) {
+          $('#js-sideNav').load('nav.html', null, function() {
+            $('#js-side45').addClass('side-nav-active');
+          });
+          resolve();
+        });
+      }
+
+      asyncFunction().then(function () {
+        console.log('サイドバー読めた！');
+      }).catch(function (error) {
+        console.log('サイドバーが読み込めていません');
+      });
     </script>
   </body>
 </html>
